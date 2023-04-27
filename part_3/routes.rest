@@ -1,0 +1,35 @@
+### POST ONE STUDENT
+POST http://localhost:3000/students HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Paul",
+    "lastName": "Walker",
+    "email": "pwalker@test.com",
+    "age": 29,
+    "currentCollege": "BYU-Idaho"
+}
+
+### PUT (UPDATE) STUDENT
+PUT http://localhost:3000/students/63d937dfea8015665037ef5c HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Tom",
+    "lastName": "Nook",
+    "email": "test1@gmail.com",
+    "age": 34,
+    "currentCollege": "BYU-Idaho"
+}
+
+### DELETE STUDENT 
+DELETE http://localhost:3000/students/63cedeaec646a3777ac82747 HTTP/1.1
+
+
+
+// Render.com method requests
+### GET HOME
+GET https://node-routes-xs4z.onrender.com HTTP/1.1
+
+### ALL STUDENTS
+GET https://node-routes-xs4z.onrender.com/students/63cee24dc646a3777ac82749 HTTP/1.1
